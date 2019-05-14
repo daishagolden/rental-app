@@ -1,0 +1,254 @@
+body{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKP3rExpT3cE-kOQ1LiYwPGDu5SQc2uRUQEWxPPWLFP5PoiFQs") no-repeat; 
+    overflow-x: hidden;
+    background-size: cover;
+}
+hr{
+    background-color: black;
+    height: 6px;
+}
+
+.signin-bar button{
+  float:right;
+  background-color:#2d7c2d; ;
+  border-color: #2d7c2d;
+  outline-color:#2d7c2d;
+}
+.signin-bar a{
+  color: silver;
+  text-decoration: none;
+}
+
+/* first bar selections */
+
+.top-bar ul {
+  margin-left: 260px;
+}
+
+.top-bar li{
+  list-style: none;
+  display: inline;
+  margin-left: 100px;
+  text-align: center;
+  font-family: "Bondoni";
+}
+
+.top-bar a{
+  color:#288f28;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* logo image and company name */
+.logo img{
+    width: 120px;
+    height:60px;
+    position: absolute;
+    left: 0px;
+}
+
+.logo h1{
+    font-weight: bolder;
+    color:  #2d7c2d;
+    text-shadow: 1px 3px black;
+    margin-left: 118px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    font-family: 'Merienda';
+    font-size: 35px;
+}
+
+.logo a{
+    color: #2d7c2d;
+    text-decoration: none;
+}
+
+
+/* Extras that can be added to car package */
+.coverages p{
+    text-align: center;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: goldenrod;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Cards that we accept for payment */
+.card-logos img{
+    width: 322px;
+    /* centers my picture */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Credit card information/validation */
+.creditCardForm {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+.creditCardForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.creditCardForm .heading h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4c4e56;
+}
+.creditCardForm .payment {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+.creditCardForm .payment .form-group {
+    float: left;
+    margin-bottom: 15px;
+}
+.creditCardForm .payment .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+}
+.creditCardForm .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+.creditCardForm .CVV {
+    width: 35%;
+}
+.creditCardForm #card-number-field {
+    width: 100%;
+}
+.creditCardForm #expiration-date {
+    width: 49%;
+}
+.creditCardForm #credit_cards {
+    width: 50%;
+    margin-top: 25px;
+    text-align: right;
+}
+.creditCardForm #pay-now {
+    width: 100%;
+    margin-top: 25px;
+}
+.creditCardForm .payment .btn {
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: goldenrod;
+    color: white;
+    float: right;
+}
+.creditCardForm .payment select {
+    padding: 10px;
+    margin-right: 15px;
+}
+.transparent {
+    opacity: 0.2;
+}
+
+/* detailed informational bottom-bar  */ 
+.informational-bar{
+    background-color: rgb(4, 77, 4);
+}
+
+.info-headers h2{
+    color: goldenrod;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+}
+.info-headers a{
+    color: silver;
+    list-style: none;
+    font-size: 12px;
+}
+
+.info-headers ul{
+    list-style: none;
+}
+
+/* country/language dropdown  */
+.country-language select{
+    padding-left: 21px;
+    margin-top: 28px;
+    background-color: rgb(4, 77, 4);
+    color: silver;
+}
+
+.social-media ul{
+    margin-top: 30px;
+}
+.social-media ul li{
+    list-style: none;
+    display: inline;
+    /* margin-top: 33px; */
+    /* margin-left: 349px; */
+}
+
+.social-media a{
+    color: silver;
+    margin-top: 33px; 
+   
+}
+
+.copyright{
+    color: silver;
+    font-size: 9px;
+}
